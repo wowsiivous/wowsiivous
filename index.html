@@ -104,7 +104,13 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop
 .contact-card a:hover{text-decoration:underline;}
 .contact-card p{color:var(--muted);font-size:0.82rem;margin-top:0.3rem;}
 
-/* FOOTER */
+/* ABOUT */
+.about{padding:4rem 1.5rem;background:white;}
+.about-inner{max-width:760px;margin:2rem auto 0;background:var(--off);border-radius:22px;padding:2.5rem 2rem;border:1.5px solid rgba(43,188,212,0.12);}
+.about-inner p{font-size:0.95rem;color:var(--muted);line-height:1.75;margin-bottom:1rem;}
+.about-inner p:last-child{margin-bottom:0;}
+.about-tags{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:1.5rem;}
+.about-tag{background:rgba(43,188,212,0.1);color:var(--aqua-dark);border-radius:50px;padding:0.35rem 0.9rem;font-size:0.8rem;font-weight:700;font-family:'Nunito',sans-serif;}
 footer{background:var(--aqua-dark);color:rgba(255,255,255,0.8);text-align:center;padding:2rem 1.5rem;font-family:'Inter',sans-serif;font-size:0.88rem;}
 footer strong{color:white;font-family:'Nunito',sans-serif;font-size:1rem;}
 footer a{color:rgba(255,255,255,0.7);text-decoration:none;}
@@ -135,7 +141,7 @@ footer a:hover{color:white;}
   <div class="hero-inner">
     <div class="hero-badge">✨ Joensuu &amp; lähialueet &nbsp;|&nbsp; 4H-yritys</div>
     <h1>Siivous, josta tulee<br><span>WOW!-tunne</span></h1>
-    <p class="hero-sub">Luotettava ja huolellinen siivouspalvelu koteihin ja yrityksiin. Varaa helposti – mie hoidan loput.</p>
+    <p class="hero-sub">Luotettava ja huolellinen siivouspalvelu koteihin ja yrityksiin. Varaa helposti – me hoidamme loput.</p>
     <a href="#varaa" class="btn-primary">Varaa siivous →</a>
     <div class="hero-trust">
       <div class="trust-item"><div class="trust-dot"></div>30 €/tunti · Alv 0%</div>
@@ -147,14 +153,14 @@ footer a:hover{color:white;}
 
 <!-- PRICE STRIP -->
 <div class="price-strip">
-  💡 Kotitalousvähennyksellä todellinen hinta vain n. 18 €/h! &nbsp;<span>Kysy lisää!</span>
+  💡 Kotitalousvähennyksellä todellinen hinta vain n. 18 €/h! &nbsp;<span>Kysy lisää lomakkeessa.</span>
 </div>
 
 <!-- SERVICES -->
 <section class="services" id="palvelut">
   <div class="section-label">Palvelut</div>
   <h2 class="section-title">Mitä teen puolestasi?</h2>
-  <p class="section-sub">Kaikki palvelut Joensuun keskustassa ja lähialueella.</p>
+  <p class="section-sub">Kaikki palvelut Joensuussa ja lähikunnissa.</p>
   <div class="services-grid">
     <div class="service-card">
       <div class="service-icon">🏠</div>
@@ -199,7 +205,7 @@ footer a:hover{color:white;}
   <div class="why-grid">
     <div class="why-point">
       <div class="why-point-icon">💎</div>
-      <div><h4>Huolellinen &amp; luotettava</h4><p>Jokainen kohde siivotaan tarkasti ja tehokkaasti. Luottamuksesta pidetään kiinni.</p></div>
+      <div><h4>Huolellinen &amp; luotettava</h4><p>Jokainen kohde siivotaan kuin omaksi kodiksi. Luottamuksesta pidetään kiinni.</p></div>
     </div>
     <div class="why-point">
       <div class="why-point-icon">🍀</div>
@@ -219,64 +225,79 @@ footer a:hover{color:white;}
 <!-- PRICING -->
 <section class="pricing" id="hinnasto">
   <div class="section-label">Hinnasto</div>
-  <h2 class="section-title">Selkeä hinnoittelu</h2>
-  <p class="section-sub">Ei piilomaksuja. Alv 0% kaikille palveluille.</p>
+  <h2 class="section-title">Paljonko siivous maksaa?</h2>
+  <p class="section-sub">Tuntihinta on 30 €/h · Alv 0% · Lopullinen hinta sovitaan aina yhdessä.</p>
+
   <div class="pricing-grid">
     <div class="price-card">
-      <h3>Kotisiivous</h3>
-      <div class="price-amount">30€</div>
-      <div class="price-unit">/ tunti</div>
-      <div class="price-vat">Alv 0% · kotitalousvähennys käytettävissä</div>
+      <h3>Yksiö</h3>
+      <div class="price-amount">45–60€</div>
+      <div class="price-unit">n. 35 m² · 1,5–2h</div>
+      <div class="price-vat">Kotitalousvähennyksellä n. 27–36 €</div>
       <hr>
       <ul>
-        <li>Kertaluontoisesti tai toistuvasti</li>
-        <li>Kesto arvioidaan yhdessä</li>
-        <li>Kotitalousvähennys käytettävissä</li>
+        <li>Pölyt, imurointi, lattiat</li>
+        <li>Keittiö &amp; kylpyhuone</li>
+        <li>Nopea ja huolellinen</li>
       </ul>
     </div>
     <div class="price-card featured">
-      <h3>Yrityssiivous</h3>
-      <div class="price-amount">30€</div>
-      <div class="price-unit">/ tunti</div>
-      <div class="price-vat">Alv 0%</div>
+      <h3>Kaksio tai kolmio</h3>
+      <div class="price-amount">60–90€</div>
+      <div class="price-unit">n. 60 m² · 2–3h</div>
+      <div class="price-vat">Kotitalousvähennyksellä n. 36–54 €</div>
       <hr>
       <ul>
-        <li>Toimistot &amp; liiketilat</li>
-        <li>Sopimushinnalla alennus</li>
-        <li>Lasku tai verkkolasku</li>
+        <li>Pölyt, imurointi, lattiat</li>
+        <li>Keittiö &amp; kylpyhuone</li>
+        <li>Toiveiden mukaan lisäpalvelut</li>
       </ul>
     </div>
     <div class="price-card">
-      <h3>Ikkunanpesu</h3>
-      <div class="price-amount">30€</div>
-      <div class="price-unit">/ tunti</div>
-      <div class="price-vat">Tai kiinteä hinta sopimuksen mukaan</div>
+      <h3>Iso koti</h3>
+      <div class="price-amount">90–150€</div>
+      <div class="price-unit">n. 100–120 m² · 3–5h</div>
+      <div class="price-vat">Kotitalousvähennyksellä n. 54–90 €</div>
       <hr>
       <ul>
-        <li>Sisä- &amp; ulkopuoli</li>
-        <li>Voidaan yhdistää siivoukseen</li>
-        <li>Kotitalousvähennys käytettävissä</li>
+        <li>Pölyt, imurointi, lattiat</li>
+        <li>Keittiö &amp; kylpyhuone</li>
+        <li>Räätälöidään tarpeen mukaan</li>
       </ul>
     </div>
   </div>
+
   <div class="kotitalous">
-    💡 <strong>Kotitalousvähennys käytännössä:</strong> Vähennä 40 % työn osuudesta verotuksessa (max 2 300 € / vuosi). 30 €/h siivouksesta todellinen kustannus on <strong>n. 18 €/h</strong>!
+    💡 <strong>Huom!</strong> Hinnat ovat suuntaa-antavia – ensimmäinen siivous saattaa kestää hieman pidempään. Sovitaan aina yhdessä ennen töiden aloitusta! Kotitalousvähennyksellä (40 % työn osuudesta) todellinen hinta on <strong>n. 18 €/h</strong>.
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="section-label">Yrittäjä</div>
+  <h2 class="section-title">Hei, olen Noora! ☀️</h2>
+  <div class="about-inner">
+    <p>Olen 19-vuotias reipas ja aurinkoinen joensuulainen, joka on perustanut yrityksen, koska haluan tehdä töitä ja tarjota luotettavan palvelun lähialueen ihmisille. WOW siivouksen tavoitteena on ylittää asiakkaan odotukset joka kerta. 🌿</p>
+    <p>Yrittäjyys ei ole minulle uutta. Perustin ensimmäisen yritykseni jo vuonna 2022 kaverini kanssa. Voitimme silloin Pohjois-Karjalan Uskalla Yrittää -kilpailussa parhaan NY-yrityksen kategorian. </p>
+    <p>Organisointi, täsmällisyys ja positiivinen asenne ovat minulle luontaisia.</p>
+    <p>Kun tilaat WOW! Siivouskselta, tiedät kenen kanssa asioit – ja voit luottaa, että homma hoidetaan sovitusti! ✨</p>
+    <div class="about-tags">
+      <span class="about-tag">☀️ Reipas</span>
+      <span class="about-tag">💎 Luotettava</span>
+      <span class="about-tag">🌱 Oma-aloitteinen</span>
+      <span class="about-tag">🍀 4H-yrittäjä</span>
+      <span class="about-tag">🏆 Uskalla Yrittää -finalisti</span>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="contact" id="varaa">
   <div class="section-label">Yhteydenotto</div>
-  <h2 class="section-title">Ota yhteyttä!</h2>
-  <p class="section-sub">Ota yhteyttä, niin sovitaan siivouksesta tarkemmin.</p>
+  <h2 class="section-title">Otetaan yhteyttä!</h2>
+  <p class="section-sub">Ota yhteyttä niin sovitaan siivous yhdessä.</p>
   <div class="contact-inner">
     <div class="contact-cards">
-      <div class="contact-card">
-        <div class="contact-card-icon">📞</div>
-        <h4>Soita</h4>
-        <a href="tel:0451886886">045 188 6886</a>
-        <p>Ma–Pe 8–20</p>
-      </div>
       <div class="contact-card">
         <div class="contact-card-icon">✉️</div>
         <h4>Sähköposti</h4>
@@ -286,7 +307,7 @@ footer a:hover{color:white;}
       <div class="contact-card">
         <div class="contact-card-icon">📍</div>
         <h4>Palvelualue</h4>
-        <span style="color:var(--aqua-dark);font-weight:600;font-size:0.95rem;">Joensuu</span>
+        <span style="color:var(--aqua-dark);font-weight:600;font-size:0.95rem;">Joensuu &amp; lähialueet</span>
         <p>🍀 4H-yritys</p>
       </div>
     </div>
@@ -296,7 +317,7 @@ footer a:hover{color:white;}
 <!-- FOOTER -->
 <footer>
   <strong>WOW! Siivous</strong><br>
-  <div class="footer-row">Noora Hurskainen &nbsp;·&nbsp; Joensuu &nbsp;·&nbsp; 🍀 4H-yritys</div>
+  <div class="footer-row">Noora Hurskainen &nbsp;·&nbsp; Joensuu &amp; lähialueet &nbsp;·&nbsp; 🍀 4H-yritys</div>
   <div class="footer-row"><a href="mailto:wowsiivous@gmail.com">✉️ wowsiivous@gmail.com</a></div>
   <div class="footer-row">Y-tunnus: 3585996-6</div>
 </footer>
